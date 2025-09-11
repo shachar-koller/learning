@@ -3,7 +3,6 @@
 This repository is a personal sandbox for practicing **Java programming**, with a focus on implementing **common data structures** and **algorithms** from scratch.  
 The goal is to strengthen core computer science fundamentals while getting hands-on experience writing clean, efficient, and well-structured Java code.
 
----
 
 ## 📂 Repository Structure
 
@@ -11,7 +10,6 @@ The goal is to strengthen core computer science fundamentals while getting hands
 - `sorting_and_searching/` – Implementations of sorting algorithms (e.g., bubble sort, quicksort, mergesort) and searching algorithms (e.g., binary search).  
 - `timeComplexity/` – Examples exploring algorithmic complexity (Big-O, Big-Theta, Big-Omega).  
 
----
 
 ## 🛠️ Goals
 
@@ -20,7 +18,6 @@ The goal is to strengthen core computer science fundamentals while getting hands
 - Write implementations that are **readable, efficient, and well-documented**.  
 - Develop intuition for **time and space complexity trade-offs**.  
 
----
 
 ## 🚀 Future Ideas
 
