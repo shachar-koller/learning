@@ -1,7 +1,8 @@
-public class main{
+public class main {
+
     public static void main(String[] args) {
         LinkedListImpl<String> mylist = new LinkedListImpl<>();
-        
+
         mylist.add("Hello");
         mylist.add("World");
         mylist.add("Of");
@@ -9,14 +10,18 @@ public class main{
         mylist.add("Structures");
         mylist.add("And");
         mylist.add("Algorithms");
-        
+
         mylist.printList();
 
-        LinkedListImpl<Integer> ml2 = new LinkedListImpl<>();
-        for(int i = 0; i < 10; i++){
-            ml2.add(i);
-        }
-        ml2.printList();
-
+        mylist.remove(0);
+        mylist.printList();
+        mylist.remove(3);
+        mylist.remove(4);
+        mylist.printList();
+        mylist.remove(3);
+        mylist.printList();
+        mylist.remove(0);
+        mylist.remove(0);
+        mylist.printList();
     }
 }
