@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ResizingArray.iml" filepath="$PROJECT_DIR$/ResizingArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/python_versions.iml" filepath="$PROJECT_DIR$/.idea/python_versions.iml" />
     </modules>
   </component>
 </project>

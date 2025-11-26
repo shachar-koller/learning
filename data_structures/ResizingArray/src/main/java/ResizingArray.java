@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class ResizingArray<Type> implements Iterable<Type>{
+public class ResizingArray<Type> implements Iterable<Type> {
 
     private Type[] base;
     private int numElements;
@@ -26,17 +26,17 @@ public class ResizingArray<Type> implements Iterable<Type>{
         this.numElements++;
     }
 
-    public void delete(Type toDelete){
-        int idx = this.get(toDelete);
-        if(idx == -1) return;
+    public void delete(Type toDelete) {
+        int idx = this.indexOf(toDelete);
+        if (idx == -1) return;
         this.base[idx] = null;
-        for(int i = idx; i < this.length-1; i++){
-            this.base[i] = this.base[i+1];
+        for (int i = idx; i < this.length - 1; i++) {
+            this.base[i] = this.base[i + 1];
         }
         this.numElements--;
     }
 
-    public Type deleteByIndex(){
+    public Type deleteByIndex() {
         return null;
     }
 
@@ -48,13 +48,13 @@ public class ResizingArray<Type> implements Iterable<Type>{
         this.length = newArr.length;
     }
 
-    public Type find(int index){
+    public Type get(int index) {
         return this.base[index];
     }
 
-    public int get(Type toFind){
-        for(int i = 0; i < this.length; i++){
-            if(this.base[i].equals(toFind)){
+    public int indexOf(Type toFind) {
+        for (int i = 0; i < this.length; i++) {
+            if (this.base[i].equals(toFind)) {
                 return i;
             }
         }
@@ -73,7 +73,7 @@ public class ResizingArray<Type> implements Iterable<Type>{
         return sb.toString();
     }
 
-    public String toStringWithNulls(){
+    public String toStringWithNulls() {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         sb.append(this.base[0]);
@@ -84,7 +84,27 @@ public class ResizingArray<Type> implements Iterable<Type>{
         return sb.toString();
     }
 
-    public int size(){
+    public int sum() {
+        int sum = 0;
+        for (int i = 0; i < this.numElements; i++) {
+            Type elem = this.base[i];
+            if (elem == null) continue;
+            if (elem instanceof Number) {
+                sum += ((Number) elem).intValue();
+            } else if (elem instanceof String) {
+                try {
+                    sum += Integer.parseInt((String) elem);
+                } catch (NumberFormatException e) {
+                    throw new IllegalArgumentException("Element at index " + i + " is not a parsable integer: " + elem, e);
+                }
+            } else {
+                throw new IllegalArgumentException("Unsupported element type at index " + i + ": " + elem.getClass());
+            }
+        }
+        return sum;
+    }
+
+    public int size() {
         return this.numElements;
     }
 
