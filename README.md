@@ -8,7 +8,9 @@ The goal is to strengthen core computer science fundamentals while getting hands
 
 - `data_structures/` – Implementations of fundamental data structures (e.g., linked lists, stacks, queues, trees, heaps, hash maps).  
 - `sorting_and_searching/` – Implementations of sorting algorithms (e.g., bubble sort, quicksort, mergesort) and searching algorithms (e.g., binary search).  
-- `timeComplexity/` – Examples exploring algorithmic complexity (Big-O, Big-Theta, Big-Omega).  
+- `timeComplexity/` – Examples exploring algorithmic complexity (Big-O, Big-Theta, Big-Omega).
+- `parallelization/` –
+- `graph_theory` - 
 
 
 ## 🛠️ Goals
