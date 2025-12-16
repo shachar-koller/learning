@@ -1,8 +1,4 @@
 package stdDraw_Examples;
-import edu.princeton.cs.algs4.StdDraw;
-// Clock.java
-// Robert Sedgewick and Kevin Wayne
-// Slightly modified by Andrew Davison, Nov. 2022
 
 /* Animate a clock, starting from the current time
 

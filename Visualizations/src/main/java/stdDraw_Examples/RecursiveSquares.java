@@ -1,5 +1,4 @@
 package stdDraw_Examples;
-import edu.princeton.cs.algs4.StdDraw;
 
 // RecursiveSquares.java
 // Robert Sedgewick and Kevin Wayne

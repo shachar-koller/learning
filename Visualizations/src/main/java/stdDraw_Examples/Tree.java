@@ -1,5 +1,4 @@
 package stdDraw_Examples;
-import edu.princeton.cs.algs4.StdDraw;
 // Tree.java
 // Robert Sedgewick and Kevin Wayne
 // Slightly reformatted by Andrew Davison, Nov. 2022
